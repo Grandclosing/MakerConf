@@ -10,29 +10,72 @@
 
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/hamburgers.css">
+
+        <script src="js/main.js"></script>
     </head>
     <body>
         <header>
             <div id="site-header">
                 <img alt="MakerConf Logo" src="img/logo.png" id="header-logo">
 
-                <nav id="site-navigation">
+                <button onclick="toggleHamburger(this)" class="hamburger hamburger--squeeze" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+
+                <nav id="desktop-navigation">
                     <ul>
                         <li>
-                            <a href="#">Home</a>
+                            <a href="./index.html">Home</a>
                         </li>
                         <li>
-                            <a href="#">About Us</a>
+                            <a href="./about.html">About Us</a>
                         </li>
                         <li>
-                            <a href="#">Schedule</a>
+                            <a href="./schedule.html">Schedule</a>
                         </li>
                         <li>
-                            <a href="#">Sponsors</a>
+                            <a href="./sponsors.html">Sponsors</a>
                         </li>
                         <li>
-                            <a href="#">Register</a>
+                            <a href="./register.html">Register</a>
                         </li>
+                    </ul>
+                </nav>
+
+                <nav id="mobile-navigation">
+                    <ul>
+                        <a href="./index.html">
+                            <li>
+                                Home
+                            </li>
+                        </a>
+
+                        <a href="./about.html">
+                            <li>
+                                About Us
+                            </li>
+                        </a>
+
+                        <a href="./schedule.html">
+                            <li>
+                                Schedule
+                            </li>
+                        </a>
+
+                        <a href="./sponsors.html">
+                            <li>
+                                Sponsors
+                            </li>
+                        </a>
+
+                        <a href="./register.html">
+                            <li>
+                            Register
+                            </li>
+                        </a>
                     </ul>
                 </nav>
             </div>
@@ -45,7 +88,9 @@
                 <h3>Just Build It&trade;</h3>
             </div>
             <div id="event-details">
-                <h1>Placeholder</h1>
+                <h1>Join us <span class="highlight">Feb 19-21</span> for a weekend of designing, building, and hacking. Event is made possible by the wonderful folks at the <span class="highlight">Pennsylvania Convention Center</span>.</h1>
+
+                <a href="register.html" id="register-button">Register</a>
             </div>
         </section>
     </body>
