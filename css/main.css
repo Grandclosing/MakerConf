@@ -1,6 +1,14 @@
 
 /* global styles */
 
+:root {
+    --gentle-white: #f2f2f2;
+    --gentle-black: #4a4a4a;
+    --brand-purple: #291F71;
+    --brand-pink: #C82586;
+    --brand-baby-blue: #4EEAF6;
+}
+
 a,
 h1,
 h2,
@@ -22,13 +30,13 @@ ul {
 }
 
 body {
-    background-color: #f2f2f2;
+    background-color: var(--gentle-white);
     display: flex;
     flex-direction: column;
 }
 
 .highlight {
-    color: #C82586;
+    color: var(--brand-pink);
 }
 
 /* header */
@@ -47,56 +55,17 @@ body {
     height: 45px;
 }
 
-#desktop-navigation li {
-    float: left;
-    margin-left: 35px;
-}
-
-nav a {
-    color: #4a4a4a;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #C82586;
-}
-
-#site-header button {
-    outline: none;
-    display: none;
-}
-
-#mobile-navigation {
-    position: fixed;
-    width: 100%;
-    top: 91px;
-    left: 0;
-
-    display: none;
-}
-
-#mobile-navigation li {
-    text-align: center;
-    padding: 15px 5px;
-    background-color: hsla(0, 0%, 95%, 75%);
-
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-}
-
-#mobile-navigation li:hover {
-    background-color: hsla(0, 0%, 95%, 100%);
-}
-
 /* landing */
 
-#landing {
+#content {
     flex-grow: 1;
     display: flex;
     justify-content: space-around;
     align-items: center;
 
     background-image: url('../img/hackathon.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #branding {
@@ -111,19 +80,19 @@ nav a:hover {
 
 #branding h2 {
     margin-top: 25px;
-    color: #291F71;
-    font-weight: 400; /* thin */
+    color: var(--brand-purple);
+    font-weight: 400;
     font-size: 2em;
     letter-spacing: 0.15em;
 }
 
 #branding h2 span {
-    color: #C82586;
+    color: var(--brand-pink);
     font-weight: bold;
 }
 
 #branding h3 {
-    color: #4EEAF6;
+    color: var(--brand-baby-blue);
     letter-spacing: 0.15em;
 }
 
@@ -137,23 +106,23 @@ nav a:hover {
 }
 
 #register-button {
-    color: white;
+    color: var(--gentle-white);
     font-weight: bold;
     text-align: center;
     padding: 15px 45px;
-    background-color: #C82586;
+    background-color: var(--brand-pink);
     border-radius: 3px;
 
     transition: background-color, color 0.3s ease;
 }
 
 #register-button:hover {
-    background-color: #ffffff;
-    color: #C82586;
+    background-color: var(--gentle-white);
+    color: var(--brand-pink);
 }
 
 @media (max-width: 800px) {
-    #landing {
+    #content {
         flex-direction: column;
     }
 
@@ -161,15 +130,18 @@ nav a:hover {
         max-width: 70%;
     }
 
-    #desktop-navigation {
-        display: none;
-    }
-
-    #site-header button {
-        display: block;
-    }
-
     #branding img {
         width: 200px;
     }
+}
+
+footer {
+    padding: 3px 3px;
+    text-align: center;
+    background-color: var(--gentle-white);
+}
+
+footer p {
+    font-weight: bold;
+    color: var(--gentle-black);
 }
