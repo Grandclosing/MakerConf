@@ -12,8 +12,10 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/nav.css">
         <link rel="stylesheet" href="css/hamburgers.css">
+        <link rel="stylesheet" href="css/schedule.css">
 
         <script src="js/nav.js"></script>
+        <script src="js/schedule.js"></script>
     </head>
     <body>
         <header>
@@ -32,10 +34,10 @@
                             <a href="./index.html">Home</a>
                         </li>
                         <li>
-                            <a class="highlight" href="./about.html">About Us</a>
+                            <a href="./about.html">About Us</a>
                         </li>
                         <li>
-                            <a href="./schedule.html">Schedule</a>
+                            <a class="highlight" href="./schedule.html">Schedule</a>
                         </li>
                         <li>
                             <a href="./sponsors.html">Sponsors</a>
@@ -54,13 +56,13 @@
                             </li>
                         </a>
 
-                        <a class="highlight" href="./about.html">
+                        <a href="./about.html">
                             <li>
                                 About Us
                             </li>
                         </a>
 
-                        <a href="./schedule.html">
+                        <a class="highlight" href="./schedule.html">
                             <li>
                                 Schedule
                             </li>
@@ -83,8 +85,283 @@
         </header>
 
         <section id="content">
-            <div>
+            <div id="day-sidebar">
+                <div class="day active-day">
+                    <h2>19</h2>
+                    <p>Fri</p>
+                </div>                
+                <div class="day">
+                    <h2>20</h2>
+                    <p>Sat</p>
+                </div>                
+                <div class="day">
+                    <h2>21</h2>
+                    <p>Sun</p>
+                </div>                
+            </div>
+
+            <div id="schedule-container">
+                <div id="friday" class="schedule-item">
+                    <h2>10:00 AM</h2>
+                    <h3>Hotel Check-in, Introductions, Meet-n-greet</h3>
+                    <h4>This is the description of this item - may contain things like location, speaker names and social media handles, etc.</h4>
+                </div>
+
+                <hr>
+
+                <div class="schedule-item">
+                    <h2>12:00 PM</h2>
+                    <h3>Lunch</h3>
+                    <h4>Cafeteria, food trucks nearby</h4>
+                </div>
+
+                <hr>
+
+                <div class="schedule-item">
+                    <h2>1:00 PM</h2>
+                    <h3>Hacking starts</h3>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                </div>
+
+                <hr>
+
+                <div class="schedule-item">
+                    <h2>2:00 PM</h2>
+                    <h3>Why you don't need JQuery anymore</h3>
+                    <h4>Featuring guest speaker: Lorem Ipsum</h4>
+                </div>
+
+                <hr>
+
+                <div class="schedule-item">
+                    <h2>3:00 PM</h2>
+                    <h3>Automation with Gulp</h3>
+                    <h4>Featuring guest speaker: Lorem Ipsum</h4>
+                </div>
+
+                <hr>
+
+                <div class="schedule-item">
+                    <h2>4:00 PM</h2>
+                    <h3>Navigating the Attention Economy</h3>
+                    <h4>Featuring guest speaker: Lorem Ipsum</h4>
+                </div>
+
+                <hr>
+
+                <div class="schedule-item">
+                    <h2>5:00 PM</h2>
+                    <h3>Dinner</h3>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                </div>
+
+                <hr>
+
+                <div class="schedule-item">
+                    <h2>7:00 PM</h2>
+                    <h3>How to build a good POC</h3>
+                    <h4>Featuring guest speaker: Lorem Ipsum</h4>
+                </div>
+
+                <hr>
+
+                <div class="schedule-item">
+                    <h2>8:00 PM</h2>
+                    <h3>State of JavaScript in 2021</h3>
+                    <h4>Featuring guest speaker: Lorem Ipsum</h4>
+                </div>
+
+                <hr>
+
+                <div class="schedule-item">
+                    <h2>9:00 PM</h2>
+                    <h3>A primer on functional programming</h3>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                </div>
+
+                <hr>
+
+                <div id="saturday" class="schedule-item">
+                    <h2>12:00 AM</h2>
+                    <h3>Midnight snack</h3>
+                    <h4>Special thanks to <a href="https://insomniacookies.com/" target="_blank" rel="noopener" class="highlight">Insomnia Cookies</a>!</h4>
+                </div>
+
+                <hr>
+
+                <div class="schedule-item">
+                    <h2>8:00 AM</h2>
+                    <h3>Breakfast</h3>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                </div>
+
+                <hr>
+
+                <div class="schedule-item">
+                    <h2>10:00 AM</h2>
+                    <h3>Intro to Machine Learning and Neural Nets</h3>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                </div>
+
+                <hr>
+
+                <div class="schedule-item">
+                    <h2>11:00 AM</h2>
+                    <h3>Lorem Ipsum dolor sit amet</h3>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                </div>
+
+                <hr>
+
+                <div class="schedule-item">
+                    <h2>12:00 PM</h2>
+                    <h3>Lunch</h3>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                </div>
+
+                <hr>
+
+                <div class="schedule-item">
+                    <h2>1:00 PM</h2>
+                    <h3>Lorem Ipsum dolor sit amet</h3>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                </div>
+
+                <hr>
+
+                <div class="schedule-item">
+                    <h2>2:00 PM</h2>
+                    <h3>Lorem Ipsum dolor sit amet</h3>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                </div>
+
+                <hr>
                 
+                <div class="schedule-item">
+                    <h2>3:00 PM</h2>
+                    <h3>Lorem Ipsum dolor sit amet</h3>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                </div>
+
+                <hr>
+
+                <div class="schedule-item">
+                    <h2>4:00 PM</h2>
+                    <h3>Lorem Ipsum dolor sit amet</h3>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                </div>
+
+                <hr>
+
+                <div class="schedule-item">
+                    <h2>5:00 PM</h2>
+                    <h3>Dinner</h3>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                </div>
+
+                <hr>
+
+                <div class="schedule-item">
+                    <h2>6:00 PM</h2>
+                    <h3>Lorem Ipsum dolor sit amet</h3>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                </div>
+
+                <hr>
+
+                <div class="schedule-item">
+                    <h2>7:00 PM</h2>
+                    <h3>Lorem Ipsum dolor sit amet</h3>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                </div>
+
+                <hr>
+
+                <div class="schedule-item">
+                    <h2>8:00 PM</h2>
+                    <h3>Lorem Ipsum dolor sit amet</h3>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                </div>
+
+                <hr>
+
+                <div class="schedule-item">
+                    <h2>9:00 PM</h2>
+                    <h3>Lorem Ipsum dolor sit amet</h3>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                </div>
+
+                <hr>
+
+                <div id="sunday" class="schedule-item">
+                    <h2>12:00 AM</h2>
+                    <h3>Midnight snack</h3>
+                    <h4>Special thanks to <a href="https://www.chick-fil-a.com/" target="_blank" rel="noopener" class="highlight">Chick-fil-a</a>!</h4>
+                </div>
+
+                <hr>
+
+                <div class="schedule-item">
+                    <h2>8:00 AM</h2>
+                    <h3>Lorem Ipsum dolor sit amet</h3>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                </div>
+
+                <hr>
+
+                <div class="schedule-item">
+                    <h2>10:00 AM</h2>
+                    <h3>Lorem Ipsum dolor sit amet</h3>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                </div>
+
+                <hr>
+
+                <div class="schedule-item">
+                    <h2>11:00 AM</h2>
+                    <h3>Lorem Ipsum dolor sit amet</h3>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                </div>
+
+                <hr>
+
+                <div class="schedule-item">
+                    <h2>12:00 PM</h2>
+                    <h3>Lorem Ipsum dolor sit amet</h3>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                </div>
+
+                <hr>
+
+                <div class="schedule-item">
+                    <h2>1:00 PM</h2>
+                    <h3>Lorem Ipsum dolor sit amet</h3>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                </div>
+
+                <hr>
+
+                <div class="schedule-item">
+                    <h2>2:00 PM</h2>
+                    <h3>Lorem Ipsum dolor sit amet</h3>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                </div>
+
+                <hr>
+
+                <div class="schedule-item">
+                    <h2>3:00 PM</h2>
+                    <h3>Lorem Ipsum dolor sit amet</h3>
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                </div>
+
+                <hr>
+
+                <div class="schedule-item">
+                    <h2>4:00 PM</h2>
+                    <h3>Closing ceremony</h3>
+                    <h4>Everyone gets a car!</h4>
+                </div>
             </div>
         </section>
 

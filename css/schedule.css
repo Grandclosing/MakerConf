@@ -1,0 +1,76 @@
+
+hr {
+    margin: 20px 0px;
+}
+
+/* override of #content in main.css */
+#content {
+    align-items: stretch;
+    display: block;
+}
+
+#day-sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+    position: fixed;
+    left: 0;
+    top: 75px;
+    height: calc(100vh - 105px);
+}
+
+.day {
+    height: 100%;
+    padding: 5px 20px;
+    text-align: center;
+    border-left-width: 15px;
+    border-left-style: solid;
+    border-left-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.active-day {
+    border-left-color: var(--brand-pink);
+}
+
+#day-sidebar div h2 {
+    font-size: 3em;
+    line-height: 0.8em;
+    color: var(--gentle-black);
+}
+
+#day-sidebar div p {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: var(--brand-pink);
+}
+
+#schedule-container {
+    margin-left: 120px;
+    height: calc(100vh - 105px);
+    overflow-y: scroll;
+}
+
+.schedule-item {
+    margin: 20px 0px;
+}
+
+.schedule-item h2 {
+    color: #000000;
+    font-size: 2em;
+    line-height: 0.6em;
+}
+
+.schedule-item h3 {
+    color: var(--gentle-black);
+    font-size: 1.5em;
+}
+
+.schedule-item h4 {
+    color: #7d7d7d;
+    font-weight: 400;
+    font-size: 1em;
+}
