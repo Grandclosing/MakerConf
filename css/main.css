@@ -65,6 +65,11 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: var(--gentle-white);
+
+    z-index: 10;
 }
 
 #header-logo {
@@ -79,6 +84,8 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    margin-top: 75px; /* to account for the 75px high position:fixed header */
 
     background-image: url('../img/hackathon.jpg');
     background-repeat: no-repeat;
@@ -141,6 +148,7 @@ body {
 @media (max-width: 800px) {
     #content {
         flex-direction: column;
+        margin-top: 91px; /* to account for the 91px high position:fixed header */
     }
 
     #event-details {
@@ -149,6 +157,62 @@ body {
 
     #branding img {
         width: 200px;
+    }
+}
+
+@media (max-width: 540px) {
+    /* Surface Duo and smaller */
+    #content {
+        padding: 20px 0px;
+    }
+
+    #branding img {
+        width: 200px;
+    }
+    
+    #branding h2 {
+        font-size: 1.8em;
+    }
+
+    #event-details h1 {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 412px) {
+    #content {
+        padding: 20px 0px;
+    }
+
+    #branding img {
+        width: 180px;
+    }
+    
+    #branding h2 {
+        font-size: 1.5em;
+    }
+
+    #event-details h1 {
+        font-size: 1em;
+    }
+
+    #register-button {
+        padding: 10px 35px;
+    }
+}
+
+@media (max-width: 350px) {
+    /* iPhone 5/SE */
+    #branding img {
+        width: 150px;
+    }
+    
+    #branding h2 {
+        font-size: 1.4em;
+    }
+
+    #event-details h1 {
+        margin-top: 50px
     }
 }
 

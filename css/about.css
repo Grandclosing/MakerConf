@@ -105,12 +105,28 @@
 }
 
 @media (max-width: 500px) {
+    #meet h1 {
+        font-size: 1.5em;
+    }
+
     .organizer img {
-        width: 175px;
-        height: 175px;
+        width: 125px;
+        height: 125px;
     }
     
     .organizer p {
-        font-size: 1.3em;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 350px) {
+    /* iPhone 5/SE and lower */
+    .organizer img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .organizer p {
+        font-size: 0.8em;
     }
 }
