@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="MakerConf is a conference organization dedicated to fostering communities of makers. We host annual events.">
+        <meta name="robots" content="index, follow">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>MakerConf | Register</title>
+
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/hamburgers.css">
+        <link rel="stylesheet" href="css/register.css">
+
+        <script src="js/nav.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="site-header">
+                <a href="index.html"><img alt="MakerConf Logo" src="img/logo.png" id="header-logo"></a>
+
+                <button onclick="toggleHamburger(this)" class="hamburger hamburger--squeeze" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+
+                <nav id="desktop-navigation">
+                    <ul>
+                        <li>
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./about.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="./schedule.html">Schedule</a>
+                        </li>
+                        <li>
+                            <a href="./sponsors.html">Sponsors</a>
+                        </li>
+                        <li>
+                            <a class="highlight" href="./register.html">Register</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav id="mobile-navigation">
+                    <ul>
+                        <a href="./index.html">
+                            <li>
+                                Home
+                            </li>
+                        </a>
+
+                        <a href="./about.html">
+                            <li>
+                                About Us
+                            </li>
+                        </a>
+
+                        <a href="./schedule.html">
+                            <li>
+                                Schedule
+                            </li>
+                        </a>
+
+                        <a href="./sponsors.html">
+                            <li>
+                                Sponsors
+                            </li>
+                        </a>
+
+                        <a class="highlight" href="./register.html">
+                            <li>
+                            Register
+                            </li>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="content">
+            <div id="branding">
+                <img alt="MakerConf Logo" src="img/logo.png">
+                <h2>MakerConf <span>2021</span></h2>
+                <h3>Just Build It&trade;</h3>
+            </div>
+            <div id="reg-container">
+                <h1 class="highlight">Registration Form</h1>
+                <form>
+                    <div class="label-group">
+                        <img src="./img/user.png" alt="User Icon">
+                        <label for="fname-entry">First Name</label>
+                    </div>
+                    
+                    <input type="text" id="fname-entry" name="fname-entry" placeholder="Jane">
+
+                    <div class="label-group">
+                        <img src="./img/user.png" alt="User Icon">
+                        <label for="lname-entry">Last Name</label>
+                    </div>
+                    
+                    <input type="text" id="lname-entry" name="lname-entry" placeholder="Doe">
+
+                    <div class="label-group">
+                        <img src="./img/email.png" alt="E-mail Icon">
+                        <label for="email-entry">E-mail</label>
+                    </div>
+                    
+                    <input type="email" id="email-entry" name="email-entry" placeholder="jdoe@domain.com">
+
+                    <div class="label-group">
+                        <img src="./img/t-shirt.png" alt="T-shirt Icon">
+                        <label for="tshirt-entry">T-Shirt Size</label>
+                    </div>
+                    
+                    <select id="tshirt-entry" name="tshirt-entry">
+                        <option value="">--Please choose an option--</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                        <option value="2XL">2XL</option>
+                        <option value="3XL">3XL</option>
+                    </select>
+
+                    <button>Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <p>Made with <span class="highlight">&hearts;</span> by <a href="https://github.com/Grandclosing" target="_blank" rel="noopener">Grandclosing</a></p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,92 @@
+
+#reg-container {
+    background-color: var(--gentle-white);
+    box-shadow: 0px 0px 5px 0px #888888;
+    padding: 15px 20px;
+    width: 35vw;
+}
+
+#reg-container form {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#reg-container h1 {
+    text-align: center;
+}
+
+#reg-container img {
+    display: inline;
+}
+
+.label-group {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.label-group img {
+    width: 20px;
+    height: 20px;
+}
+
+.label-group label {
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+#reg-container input {
+    width: 100%;
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    padding: 0px 5px;
+    height: 2em;
+    margin-top: 3px;
+
+    border-left: 5px solid transparent;
+    transition: border-left-color 0.3s ease;
+}
+
+#reg-container input:focus {
+    border-left-color: var(--brand-pink);
+}
+
+#reg-container button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    padding: 5px 20px;
+
+    border-radius: 3px;
+    cursor: pointer;
+
+    background-color: var(--brand-pink);
+    color: white;
+    font-weight: bold;
+
+    transition: color, background-color 0.3s ease;
+}
+
+#reg-container button:hover {
+    color: var(--brand-pink);
+    background-color: var(--gentle-white);
+}
+
+#reg-container button:focus {
+    color: var(--brand-pink);
+    background-color: var(--gentle-white);
+}
+
+#reg-container select {
+    width: 100%;
+    height: 2em;
+    outline-color: var(--brand-pink); 
+}
+
+@media (max-width: 800px) {
+    #reg-container {
+        width: 85vw;
+    }
+}
