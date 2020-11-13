@@ -161,11 +161,6 @@ body {
 }
 
 @media (max-width: 540px) {
-    /* Surface Duo and smaller */
-    #content {
-        padding: 20px 0px;
-    }
-
     #branding img {
         width: 200px;
     }
