@@ -85,6 +85,10 @@
     outline-color: var(--brand-pink); 
 }
 
+input:focus:required:invalid {
+    border: 1px dashed red !important;
+}
+
 @media (max-width: 800px) {
     #reg-container {
         width: 85vw;

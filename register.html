@@ -90,35 +90,48 @@
                 <h3>Just Build It&trade;</h3>
             </div>
             <div id="reg-container">
-                <h1 class="highlight">Registration Form</h1>
-                <form>
+                <h1 class="highlight">Register Here</h1>
+                <form action="thank.html">
                     <div class="label-group">
                         <img src="./img/user.png" alt="User Icon">
-                        <label for="fname-entry">First Name</label>
+                        <label for="fname-entry">First Name*</label>
                     </div>
                     
-                    <input type="text" id="fname-entry" name="fname-entry" placeholder="Jane">
+                    <input type="text" id="fname-entry" name="fname-entry" placeholder="Jane" required validation>
 
                     <div class="label-group">
                         <img src="./img/user.png" alt="User Icon">
-                        <label for="lname-entry">Last Name</label>
+                        <label for="lname-entry">Last Name*</label>
                     </div>
                     
-                    <input type="text" id="lname-entry" name="lname-entry" placeholder="Doe">
+                    <input type="text" id="lname-entry" name="lname-entry" placeholder="Doe" required>
 
                     <div class="label-group">
                         <img src="./img/email.png" alt="E-mail Icon">
-                        <label for="email-entry">E-mail</label>
+                        <label for="email-entry">E-mail*</label>
                     </div>
                     
-                    <input type="email" id="email-entry" name="email-entry" placeholder="jdoe@domain.com">
+                    <input type="email" id="email-entry" name="email-entry" placeholder="jdoe@domain.com" required>
+
+                    <div class="label-group">
+                        <img src="./img/phone-call.png" alt="Phone Icon">
+                        <label for="phone-entry">Phone Number</label>
+                        <p class="tooltip">?
+                            <span class="tooltip-text" id="phone-tooltip">We can send you schedule updates throught the event</span>
+                        </p>
+                    </div>
+                    
+                    <input type="tel" id="phone-entry" name="phone-entry" placeholder="(555)-555-5555">
 
                     <div class="label-group">
                         <img src="./img/t-shirt.png" alt="T-shirt Icon">
-                        <label for="tshirt-entry">T-Shirt Size</label>
+                        <label for="tshirt-entry">T-Shirt Size*</label>
+                        <p class="tooltip">?
+                            <span class="tooltip-text" id="phone-tooltip">We want to know how many of each size to order</span>
+                        </p>
                     </div>
                     
-                    <select id="tshirt-entry" name="tshirt-entry">
+                    <select id="tshirt-entry" name="tshirt-entry" required>
                         <option value="">--Please choose an option--</option>
                         <option value="S">S</option>
                         <option value="M">M</option>
@@ -128,7 +141,7 @@
                         <option value="3XL">3XL</option>
                     </select>
 
-                    <button>Submit</button>
+                    <button type="submit">Submit</button>
                 </form>
             </div>
         </section>
