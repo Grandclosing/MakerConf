@@ -40,6 +40,10 @@
         height: calc(100vh - 121px);
     }
 
+    #content h1 {
+        font-size: 1.2em;
+    }
+
     #sponsor-container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -53,7 +57,6 @@
     }
 
     #content h1 {
-        font-size: 1.2em;
         width: 80%;
         margin: 0 auto;
         margin-top: 20px;

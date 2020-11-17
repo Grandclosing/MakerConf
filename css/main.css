@@ -206,6 +206,11 @@ body {
     #event-details h1 {
         font-size: 1.2em;
     }
+
+    .tooltip .tooltip-text {
+        left: 0;
+        top: 27px;
+    }
 }
 
 @media (max-width: 412px) {

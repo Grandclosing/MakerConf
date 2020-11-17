@@ -1,0 +1,56 @@
+
+#content {
+    display: block;
+    text-align: center;
+}
+
+#content h1 {
+    font-size: 2em;
+    color: var(--gentle-black);
+
+    margin-top: 25vh;
+}
+
+#phone-confirmation {
+    margin-top: 10vh;
+    font-size: 1.5em;
+    display: none;
+}
+
+#phone-confirmation:not(:empty) {
+    display: block;
+}
+
+@media (max-width: 800px) {
+    #content h1 {
+        font-size: 1.8em;
+    }
+
+    #content h2 {
+        font-size: 1.3em;
+    }
+    
+    #phone-confirmation {
+        font-size: 1.2em;
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 10vh;
+    }
+}
+
+@media (max-width: 500px) {
+    #content h1 {
+        font-size: 1.5em;
+        margin-top: 10vh;
+    }
+
+    #content h2 {
+        font-size: 1em;
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    #phone-confirmation {
+        font-size: 1em;
+    }
+}

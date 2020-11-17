@@ -94,3 +94,13 @@ input:focus:required:invalid {
         width: 85vw;
     }
 }
+
+@media (max-width: 500px) {
+    #branding img {
+        width: 135px;
+    }
+
+    #reg-container {
+        margin-top: 20px;
+    }
+}
