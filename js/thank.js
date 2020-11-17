@@ -10,8 +10,6 @@ function parseParams() {
         let paramPair = param.split('=');
         queryObj[paramPair[0]] = paramPair[1];
     }
-
-    console.log(queryObj);
 };
 
 /* Derived from https://stackoverflow.com/a/8358141/3708051

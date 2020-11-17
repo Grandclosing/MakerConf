@@ -1,6 +1,4 @@
 
-/* global styles */
-
 :root {
     --gentle-white: #f2f2f2;
     --gentle-black: #4a4a4a;
@@ -33,6 +31,7 @@ body {
     background-color: var(--gentle-white);
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 .highlight {
@@ -54,27 +53,6 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--brand-pink);
-}
-
-/* header */
-
-#site-header { 
-    padding: 15px 35px;
-    box-shadow: 0px 3px 4px 0px #d0d0d0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    background-color: var(--gentle-white);
-
-    z-index: 10;
-}
-
-#header-logo {
-    width: 45px;
-    height: 45px;
 }
 
 .tooltip {
@@ -111,7 +89,24 @@ body {
     visibility: visible;
 }
 
-/* todo: move any home page-specific CSS to home.css */
+#site-header { 
+    padding: 15px 35px;
+    box-shadow: 0px 3px 4px 0px #d0d0d0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: var(--gentle-white);
+
+    z-index: 10;
+}
+
+#header-logo {
+    width: 45px;
+    height: 45px;
+}
 
 #content {
     flex-grow: 1;
@@ -126,87 +121,14 @@ body {
     background-size: cover;
 }
 
-#branding {
-    text-align: center;
-}
-
-#branding img {
-    width: 250px;
-    display: block;
-    margin: 0 auto;
-}
-
-#branding h2 {
-    margin-top: 25px;
-    color: var(--brand-purple);
-    font-weight: 400;
-    font-size: 2em;
-    letter-spacing: 0.15em;
-}
-
-#branding h2 span {
-    color: var(--brand-pink);
-    font-weight: bold;
-}
-
-#branding h3 {
-    color: var(--brand-baby-blue);
-    letter-spacing: 0.15em;
-}
-
-#event-details {
-    max-width: 38%;
-    text-align: center;
-}
-
-#event-details h1 {
-    margin-bottom: 35px;
-}
-
-#register-button {
-    color: var(--gentle-white);
-    font-weight: bold;
-    text-align: center;
-    padding: 15px 45px;
-    background-color: var(--brand-pink);
-    border-radius: 3px;
-
-    transition: background-color, color 0.3s ease;
-}
-
-#register-button:hover {
-    background-color: var(--gentle-white);
-    color: var(--brand-pink);
-}
-
 @media (max-width: 800px) {
     #content {
         flex-direction: column;
         margin-top: 91px; /* to account for the 91px high position:fixed header */
     }
-
-    #event-details {
-        max-width: 70%;
-    }
-
-    #branding img {
-        width: 200px;
-    }
 }
 
 @media (max-width: 540px) {
-    #branding img {
-        width: 200px;
-    }
-    
-    #branding h2 {
-        font-size: 1.8em;
-    }
-
-    #event-details h1 {
-        font-size: 1.2em;
-    }
-
     .tooltip .tooltip-text {
         left: 0;
         top: 27px;
@@ -216,37 +138,6 @@ body {
 @media (max-width: 412px) {
     #content {
         padding: 20px 0px;
-    }
-
-    #branding img {
-        width: 180px;
-    }
-    
-    #branding h2 {
-        font-size: 1.5em;
-    }
-
-    #event-details h1 {
-        font-size: 1em;
-    }
-
-    #register-button {
-        padding: 10px 35px;
-    }
-}
-
-@media (max-width: 350px) {
-    /* iPhone 5/SE */
-    #branding img {
-        width: 150px;
-    }
-    
-    #branding h2 {
-        font-size: 1.4em;
-    }
-
-    #event-details h1 {
-        margin-top: 50px
     }
 }
 

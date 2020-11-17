@@ -1,0 +1,65 @@
+
+#branding {
+    text-align: center;
+}
+
+#branding img {
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+}
+
+#branding h2 {
+    margin-top: 25px;
+    color: var(--brand-purple);
+    font-weight: 400;
+    font-size: 2em;
+    letter-spacing: 0.15em;
+}
+
+#branding h2 span {
+    color: var(--brand-pink);
+    font-weight: bold;
+}
+
+#branding h3 {
+    color: var(--brand-baby-blue);
+    letter-spacing: 0.15em;
+}
+
+@media (max-width: 800px) {
+    #branding img {
+        width: 200px;
+    }
+}
+
+@media (max-width: 540px) {
+    #branding img {
+        width: 200px;
+    }
+    
+    #branding h2 {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 412px) {
+    #branding img {
+        width: 180px;
+    }
+    
+    #branding h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 350px) {
+    /* iPhone 5/SE */
+    #branding img {
+        width: 150px;
+    }
+    
+    #branding h2 {
+        font-size: 1.4em;
+    }
+}

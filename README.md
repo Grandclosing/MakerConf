@@ -1,2 +1,2 @@
 # MakerConf
-Website for a fake maker's conference. Just doing some more HTML5/CSS3 + Vanilla JS practice in an effort to follow the [2020 Front End Web Developer Roadmap](https://roadmap.sh/frontend). Higher level skills must be built on strong fundamentals. 
+I'm returning to web development again after a long break. This is a website for a fake conference. The focus of this project was HTML + CSS; I wrote some vanilla JS where necessary; but I'll focus more on JS when I get into building web apps.
