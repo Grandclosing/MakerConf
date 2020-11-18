@@ -4,6 +4,10 @@
     margin-left: 35px;
 }
 
+ul li a { 
+    display:block; 
+}
+
 nav a {
     color: var(--gentle-black);
     font-weight: bold;
