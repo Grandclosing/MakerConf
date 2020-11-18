@@ -1,65 +1,64 @@
-
 #desktop-navigation li {
-    float: left;
-    margin-left: 35px;
+  float: left;
+  margin-left: 35px;
 }
 
-ul li a { 
-    display:block; 
+ul li a {
+  display: block;
 }
 
 nav a {
-    color: var(--gentle-black);
-    font-weight: bold;
+  color: var(--gentle-black);
+  font-weight: bold;
 }
 
 nav a:hover {
-    color: var(--brand-pink);
+  color: var(--brand-pink);
 }
 
 #site-header button {
-    outline: none;
-    display: none;
+  outline: none;
+  display: none;
 }
 
 #mobile-navigation {
-    position: fixed;
-    width: 100%;
-    top: 91px;
-    left: 0;
+  position: fixed;
+  width: 100%;
+  top: 91px;
+  left: 0;
 
-    display: none;
-    z-index: 10;
+  display: none;
+  z-index: 10;
 }
 
 #mobile-navigation li {
-    text-align: center;
-    padding: 15px 5px;
-    background-color: var(--gentle-white);
+  text-align: center;
+  padding: 15px 5px;
+  background-color: var(--gentle-white);
 
-    transition: background-color 0.3s ease;
-    cursor: pointer;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
 #mobile-navigation li:hover {
-    background-color: #e8e8e8;
+  background-color: #e8e8e8;
 }
 
 @media (min-width: 800px) {
-    /* remove mobile menu if it's open, and user resizes browser window above 800px */
-    #mobile-navigation {
-        /* we use !important here because we toggle display for this element with JavaScript, effectively 
+  /* remove mobile menu if it's open, and user resizes browser window above 800px */
+  #mobile-navigation {
+    /* we use !important here because we toggle display for this element with JavaScript, effectively 
            creating a tag-specific style which takes precedence over this CSS */
-        display: none !important;
-    }
+    display: none !important;
+  }
 }
 
 @media (max-width: 800px) {
-    #desktop-navigation {
-        display: none;
-    }
+  #desktop-navigation {
+    display: none;
+  }
 
-    #site-header button {
-        display: block;
-    }
+  #site-header button {
+    display: block;
+  }
 }

@@ -1,10 +1,9 @@
-
 :root {
-    --gentle-white: #f2f2f2;
-    --gentle-black: #4a4a4a;
-    --brand-purple: #291F71;
-    --brand-pink: #C82586;
-    --brand-baby-blue: #4EEAF6;
+  --gentle-white: #f2f2f2;
+  --gentle-black: #4a4a4a;
+  --brand-purple: #291f71;
+  --brand-pink: #c82586;
+  --brand-baby-blue: #4eeaf6;
 }
 
 a,
@@ -18,136 +17,136 @@ li {
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
-    background-color: var(--gentle-white);
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
+  background-color: var(--gentle-white);
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
 }
 
 .highlight {
-    color: var(--brand-pink);
+  color: var(--brand-pink);
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--gentle-white);
+  background: var(--gentle-white);
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: hsla(324, 69%, 46%, 0.65);
-    border-radius: 15px;
+  background-color: hsla(324, 69%, 46%, 0.65);
+  border-radius: 15px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--brand-pink);
+  background: var(--brand-pink);
 }
 
 .tooltip {
-    background-color: #a3a3a3;
-    color: #ffffff;
-    font-weight: bold;
-    padding: 4px 8px;
-    border-radius: 50%;
-    margin-left: 5px;
-    font-size: 0.7em;
-    
-    user-select: none;
+  background-color: #a3a3a3;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 50%;
+  margin-left: 5px;
+  font-size: 0.7em;
 
-    position: relative;
-    display: inline-block;
+  user-select: none;
+
+  position: relative;
+  display: inline-block;
 }
 
 .tooltip .tooltip-text {
-    visibility: hidden;
-    width: 180px;
-    background-color: var(--gentle-black);
-    color: var(--gentle-white);
-    text-align: center;
-    border-radius: 5px;
-    padding: 5px 0;
+  visibility: hidden;
+  width: 180px;
+  background-color: var(--gentle-black);
+  color: var(--gentle-white);
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
 
-    top: 0;
-    left: 25px;
-    position: absolute;
-    z-index: 1;
+  top: 0;
+  left: 25px;
+  position: absolute;
+  z-index: 1;
 }
 
 .tooltip:hover .tooltip-text {
-    visibility: visible;
+  visibility: visible;
 }
 
-#site-header { 
-    padding: 15px 35px;
-    box-shadow: 0px 3px 4px 0px #d0d0d0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    background-color: var(--gentle-white);
+#site-header {
+  padding: 15px 35px;
+  box-shadow: 0px 3px 4px 0px #d0d0d0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: var(--gentle-white);
 
-    z-index: 10;
+  z-index: 10;
 }
 
 #header-logo {
-    width: 45px;
-    height: 45px;
+  width: 45px;
+  height: 45px;
 }
 
 #content {
-    flex-grow: 1;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
-    margin-top: 75px; /* to account for the 75px high position:fixed header */
+  margin-top: 75px; /* to account for the 75px high position:fixed header */
 
-    background-image: url('../img/hackathon.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("../img/hackathon.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (max-width: 800px) {
-    #content {
-        flex-direction: column;
-        margin-top: 91px; /* to account for the 91px high position:fixed header */
-    }
+  #content {
+    flex-direction: column;
+    margin-top: 91px; /* to account for the 91px high position:fixed header */
+  }
 }
 
 @media (max-width: 540px) {
-    .tooltip .tooltip-text {
-        left: 0;
-        top: 27px;
-    }
+  .tooltip .tooltip-text {
+    left: 0;
+    top: 27px;
+  }
 }
 
 @media (max-width: 412px) {
-    #content {
-        padding: 20px 0px;
-    }
+  #content {
+    padding: 20px 0px;
+  }
 }
 
 footer {
-    padding: 3px 3px;
-    text-align: center;
-    background-color: var(--gentle-white);
+  padding: 3px 3px;
+  text-align: center;
+  background-color: var(--gentle-white);
 }
 
 footer p {
-    font-weight: bold;
-    color: var(--gentle-black);
+  font-weight: bold;
+  color: var(--gentle-black);
 }

@@ -1,0 +1,27 @@
+{
+  "name": "makerconf",
+  "version": "1.0.0",
+  "description": "A fake makers' conference website for web dev practice",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Grandclosing/MakerConf.git"
+  },
+  "keywords": [
+    "Static",
+    "html",
+    "website"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Grandclosing/MakerConf/issues"
+  },
+  "homepage": "https://github.com/Grandclosing/MakerConf#readme",
+  "devDependencies": {
+    "prettier": "2.1.2"
+  }
+}
